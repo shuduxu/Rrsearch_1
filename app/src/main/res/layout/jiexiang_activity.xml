@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jiexiang_activity"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backmain"
+    android:weightSum="6"
+    tools:context="com.example.administrator.rrsearch__1.jiexiang_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#878787"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:id="@+id/button_backff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp">
+        <Spinner
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner_b1"
+            android:dropDownVerticalOffset="30dp"
+            />
+
+        <Button
+            android:text="地點確認"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/but_1"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30">
+        <TextView
+            android:text="工作時長"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:paddingLeft="24dp"
+            android:layout_weight="0.52" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:theme="@style/MyEditText"
+            android:ems="3"
+            android:id="@+id/editText_id23"
+            android:layout_marginRight="30dp"
+            android:layout_weight="2.77" />
+        <Button
+            android:text="確認"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="40dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/but_2"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:text="物資采購"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:id="@+id/textView4"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="物資編號"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:id="@+id/textView5"
+            android:layout_width="92dp" />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="0dp"
+            android:ems="5"
+            android:maxLength="5"
+            android:id="@+id/editText_id24"
+            android:layout_weight="1.85" />
+
+        <TextView
+            android:text="單價"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="3.32"
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:theme="@style/MyEditText"
+            android:id="@+id/editText_id25"
+            android:layout_marginRight="15dp"
+            android:maxLength="6"
+            android:ems="6"
+            android:layout_width="70dp"
+            android:layout_weight="0.60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.37">
+        <TextView
+            android:text="物資名稱"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:id="@+id/textView7"
+            android:layout_width="92dp" />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="0dp"
+            android:ems="5"
+            android:maxLength="5"
+            android:id="@+id/editText_id26"
+            android:layout_weight="1.85" />
+
+        <TextView
+            android:text="數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="3.32"
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:id="@+id/editText_id27"
+            android:layout_marginRight="15dp"
+            android:maxLength="6"
+            android:ems="6"
+            android:layout_width="70dp"
+            android:layout_weight="0.60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="23dp"
+        android:layout_weight="3.60">
+        <Button
+            android:id="@+id/but_3"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_marginTop="30dp"
+            android:text="壹鍵決算"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+</LinearLayout>

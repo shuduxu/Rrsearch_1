@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backmain"
+    >
+    <LinearLayout
+        android:background="#878787"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:id="@+id/button_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+
+        <EditText
+            android:id="@+id/worker_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:digits="1234567890"
+            android:hint="工作號"
+            android:maxLength="5"
+            android:theme="@style/MyEditText"/>
+
+        <EditText
+            android:id="@+id/old_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:digits="@string/register_name_digits"
+            android:inputType="textPassword"
+            android:hint="原密碼"
+            android:maxLength="16"
+            android:theme="@style/MyEditText"/>
+
+        <EditText
+            android:id="@+id/new_passwd"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:digits="@string/register_name_digits"
+            android:inputType="textPassword"
+            android:hint="新密碼"
+            android:maxLength="16"
+            android:theme="@style/MyEditText"/>
+        <EditText
+            android:id="@+id/new1_passwd"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:digits="@string/register_name_digits"
+            android:inputType="textPassword"
+            android:hint="確認新密碼"
+            android:maxLength="16"
+            android:theme="@style/MyEditText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/button_xiugaimima"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:text="修改密碼"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

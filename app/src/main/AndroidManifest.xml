@@ -2,21 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.rrsearch__1">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_icon"
+        android:label="Relics database"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".baocun_activity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".second_activity" />
+        <activity android:name=".splash_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".third_activity" />
+        <activity android:name=".qianqi_activity" />
+        <activity android:name=".fajue_activity" />
+        <activity android:name=".jiexiang_activity" />
+        <activity android:name=".baocun_activity" />
+        <activity android:name=".xiufu_activity" />
+        <activity android:name=".zhanlan_activity" />
+        <activity android:name=".qianqi1_activity" />
+        <activity android:name=".fajue2_activity" />
     </application>
 
 </manifest>

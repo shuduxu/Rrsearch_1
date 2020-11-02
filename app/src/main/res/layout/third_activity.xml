@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/third_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backmain"
+    android:orientation="vertical"
+    android:weightSum="12.61"
+    tools:context="com.example.administrator.rrsearch__1.third_activity">
+    <LinearLayout
+        android:background="#878787"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1.13"
+        android:weightSum="1">
+
+        <TextView
+            android:text="首頁"
+            android:layout_width="303dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/textView_f" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:src="@mipmap/qianqi_"
+            android:id="@+id/imageView2"
+            android:background="#00000000"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:text="前期勘探"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_qianqi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:src="@mipmap/wajue_"
+            android:id="@+id/imageView3"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:text="考古發掘"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_fajue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:src="@mipmap/hou_qi"
+            android:id="@+id/imageView4"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:text="考古結項"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_jieshu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:id="@+id/cv_2"
+            android:src="@mipmap/baoguan"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:paddingTop="50dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:text="文物存儲"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_baocun" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/xiufu_"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:id="@+id/imageView6" />
+
+        <Button
+            android:text="文物修復"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_xiufu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/zhanlan"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:id="@+id/imageView5" />
+
+        <Button
+            android:text="文物展出"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:textColor="@drawable/textcolor"
+            android:textSize="25dp"
+            android:id="@+id/button_zhanlan" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zhanlan_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backmain"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.administrator.rrsearch__1.zhanlan_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#878787"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:id="@+id/button_backfffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp">
+        <Spinner
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/zspinner"
+            android:dropDownVerticalOffset="40dp"
+            android:layout_weight="0.00" />
+
+        <Button
+            android:text="展出查詢"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/z_chaxun"
+            android:background="#00000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25">
+        <TextView
+            android:text="文物展览"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:id="@+id/ctextView"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27">
+        <TextView
+            android:text="文物編號"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:id="@+id/ztextView1"
+            android:layout_width="92dp" />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="15dp"
+            android:ems="5"
+            android:maxLength="5"
+            android:id="@+id/zeditText_1"
+            android:layout_weight="1.85" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.34">
+        <TextView
+            android:text="負責人"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:id="@+id/ztextView2"
+            android:layout_width="92dp" />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="0dp"
+            android:ems="5"
+            android:maxLength="5"
+            android:id="@+id/zeditText_2"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.85" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="23dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/zbutton_zhanlan"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:layout_marginTop="10dp"
+            android:text="文物展览"
+            android:textColor="@drawable/textcolor"
+            android:textSize="15dp"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/zbutton_chezhan"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:layout_marginTop="10dp"
+            android:text="文物撤展"
+            android:textColor="@drawable/textcolor"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.07" />
+    </LinearLayout>
+
+</LinearLayout>

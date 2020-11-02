@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fajue_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backmain"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.example.administrator.rrsearch__1.fajue2_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#878787"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:id="@+id/button_backf" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_weight="0.32">
+        <Spinner
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner1"
+            android:dropDownVerticalOffset="30dp"
+            />
+
+        <Button
+            android:text="地點確認"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/button_cha1"
+            android:background="#00000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_weight="0.32">
+        <Spinner
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner2"
+            android:dropDownVerticalOffset="30dp"
+            />
+
+        <Button
+            android:text="部門確認"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/button_cha2"
+            android:background="#00000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_weight="0.29">
+        <Spinner
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner3"
+            android:dropDownVerticalOffset="30dp"
+            />
+
+        <Button
+            android:text="文物查詢"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@drawable/textcolor"
+            android:id="@+id/button_cha3"
+            android:background="#00000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文物登記"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:weightSum="6">
+        <TextView
+            android:text="文物編號"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:id="@+id/textView11"
+            android:layout_width="92dp" />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="0dp"
+            android:ems="5"
+            android:maxLength="5"
+            android:id="@+id/editText_id11"
+
+            android:layout_weight="1.85" />
+
+        <TextView
+            android:text="負責人"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_weight="3.32"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:theme="@style/MyEditText"
+            android:id="@+id/editText_id12"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="15dp"
+            android:maxLength="6"
+            android:ems="6"
+            android:layout_width="70dp"
+            android:layout_weight="0.60" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49">
+        <TextView
+            android:text="文物命名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:paddingLeft="24dp"
+            android:layout_weight="0.52" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:theme="@style/MyEditText"
+            android:ems="10"
+            android:id="@+id/editText_id13"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2.77" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:text="臨時人員"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/checkBox2"
+            android:layout_marginLeft="20dp"
+            android:checked="false"
+            android:layout_weight="0.00" />
+
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="wrap_content"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:paddingTop="0dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="34dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="拍照" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:id="@+id/button_queren1"
+            android:text="確認"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/button_quxiao1"
+            android:text="取消"/>
+    </LinearLayout>
+</LinearLayout>
