@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="@mipmap/backmain"
+    tools:context="com.example.administrator.rrsearch__1.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_weight="3">
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:weightSum="2">
+
+        <com.example.administrator.rresearch__1.CircleImageView
+            android:id="@+id/cv_1"
+            android:layout_width="81dp"
+            android:src="@mipmap/touxiang"
+            android:layout_gravity="center"
+            app:border_color="#D1D1D1"
+            app:border_width="1dp"
+            android:paddingTop="50dp"
+            android:layout_weight="0.15"
+            android:layout_height="81dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.73"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/Text_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="賬號"
+            android:theme="@style/MyEditText"
+            android:digits="1234567890"
+            android:maxLength="5"
+            android:layout_weight="0.29" />
+
+        <EditText
+            android:id="@+id/Text_2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:theme="@style/MyEditText"
+            android:digits="@string/register_name_digits"
+            android:inputType="textPassword"
+            android:hint="密碼"
+            android:maxLength="16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="250dp"
+        android:layout_alignParentRight="true"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_xiugai"
+            android:layout_width="match_parent"
+            android:textColor="@drawable/textcolor"
+            android:background="#00000000"
+            android:paddingTop="0dp"
+            android:layout_height="34dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="修改密碼" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_weight="3"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/button_denglu"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content"
+            android:text="登陸"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+
+</LinearLayout>
